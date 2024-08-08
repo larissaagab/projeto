@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poliana 2ºinfo.1</title>
+    <style>
+      body {
+        background: url(aranha.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 300px;
+        color: darkred;
+      }
+      #nomeInput {
+        padding: 10px;
+        font-size: 16px;
+      }
+      #exibirNome {
+        margin-top: 20px;
+        font-size: 18px;
+        color: yellowgreen;
+      }
+      button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: rgb(255, 0, 0);
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 50px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+      button:hover {
+        background-color: rgb(139, 0, 0);
+        transform: scale(1.05);
+      }
+    </style>
+</head>
+<body>
+  <h1>Larissa Gabriela Marques Alves</h1>
+  <h3>Escola Estadual Professor Pedro Saturnino de Magalhães</h3>
+  <h3>Programação Web 2ºINFO1</h3>
+  <h2>Digite seu nome:</h2>
+  <input type="text" id="nomeInput" placeholder="Digite seu nome">
+  <button onclick="exibirNome()">Exibir Nome</button>
+  <div id="exibirNome"></div>
+<script>
+  //Definindo a função 'exibirNome'
+  function exibirNome() {
+    var nome = document.getElementById('nomeInput').value;//Obtendo o valor digitado na caixa de texto com o ID 'nomeInput'
+    var mensagem = "Olá, " + nome + "!";//Criando uma mensagem de saudação com o nome obtido
+    document.getElementById('exibirNome').innerText = mensagem;//Exibindo a mensagem na área com o ID 'exibirNome'
+  }
+</script>
+</body>
+</html>

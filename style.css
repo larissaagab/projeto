@@ -1,0 +1,40 @@
+/* Estilos para o corpo da página */
+body {
+    /* Define a fonte para o texto do corpo */
+    font-family: Arial, sans-serif;
+    /* Centraliza o conteúdo horizontalmente na página */
+    text-align: center;
+    /* Definhe uma imagem de fundo chamada "matematica.jpg" */
+    background-image: url("matematica.jpg");
+    /* Ajusta o tamanho da imagem para cobrir toda a área do fundo */
+    background-size: cover;
+    /* Posiciona a imagem centralizada no fundo */
+    background-position: center;
+    /* Oculta as barras de rolagem caso a imagem seja maior que a tela */
+    background-repeat: no-repeat;
+    overflow: hidden;
+    color: aliceblue;
+    margin: 330px;
+}
+
+/* Estilos para todos os campos de entrada (input) na página */
+input {
+    /* Adiciona um preenchimento de 10 pixels ao redor do conteúdo dentro do campo de entrada */
+    padding: 5px;
+    /* Adiciona uma margem de 10 pixels ao redor do botão */
+    margin: 20px;
+}
+
+/* Estilos para todos os botões na página */
+button {
+    /* Adiciona um preenchimento de 10 pixels ao redor do conteúdo dentro do botão */
+    padding: 10px;
+    /* Adiciona uma margem de 10 pixels ao redor do botão */
+    margin: 10px;
+    /* Altera a aparência do cursor para um ponteiro quando o mouse passa sobre o botão */
+    cursor: pointer;
+    color: black;
+    background-color: red;
+    border-radius: 10px;
+    transition: background-color 10s, color 10s;
+}
